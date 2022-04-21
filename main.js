@@ -127,8 +127,8 @@ new Chartist.Line('#chart2', {
   }]
 ]);
 
-chart3 = new Chartist.Pie('#chart3', {
-  labels:[currentXP+'/'+ neededXP + ' XP'], 
+let chart3 = new Chartist.Pie('#chart3', {
+  labels:[currentXP+'/'+ neededXP + ' XP', ''], 
   series: [{ name: 'done', className: 'ct-done', value: currentXP/ neededXP }, 
   {name: 'left', className: 'ct-left', value: 1-currentXP/ neededXP}]
 }, {
